@@ -12,7 +12,7 @@ services:
       spring.datasource.url: jdbc:postgresql://data:5432/usertg
       spring.datasource.username: memo
       spring.datasource.password: memobot
-      KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
     depends_on:
       - data
       - kafka
