@@ -21,10 +21,10 @@ public class KafkaConsumerConfig {
         Map<String, Object> props = new HashMap<>();
         props.put(
                 ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,
-                "localhost:9092");
+                "broker:9092");
         props.put(
                 ConsumerConfig.GROUP_ID_CONFIG,
-                "myGroup");
+                "BACK");
         props.put(
                 ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG,
                 ErrorHandlingDeserializer.class);
