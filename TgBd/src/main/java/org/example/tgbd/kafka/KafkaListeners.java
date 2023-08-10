@@ -15,7 +15,7 @@ public class KafkaListeners {
 
     private final Map<String, KafkaSender> kafkaControllerList;
 
-    @KafkaListener(topics = "bdTopic", groupId = "myGroup")
+    @KafkaListener(topics = "bdTopic", groupId = "BACK")
     void listener(DtoKeeper dtoKeeper) {
         Optional<KafkaSender> controllerOptional =
             kafkaControllerList.entrySet().stream()
